@@ -1,0 +1,35 @@
+-- native treesitter setup
+require("nvim-treesitter").setup({})
+
+vim.api.nvim_create_autocmd("FileType", {
+	group = vim.api.nvim_create_augroup("tree-sitter-enable", { clear = true }),
+	callback = function(args)
+		local lang = vim.treesitter.language.get_lang(args.match)
+		if not lang then
+			return
+		end
+		pcall(vim.treesitter.start, args.buf)
+		if vim.treesitter.query.get(lang, "indents") then
+			vim.opt_local.indentexpr = 'v:lua.require("nvim-treesitter").indentexpr()'
+		end
+	end,
+})
+
+-- native lsp enable for your languages
+for _, name in ipairs({
+	"clangd",
+	"rust_analyzer",
+	"jdtls",
+}) do
+	vim.lsp.enable(name)
+end
+
+-- enable native completion on attach
+vim.api.nvim_create_autocmd("LspAttach", {
+	callback = function(event)
+		local client = vim.lsp.get_client_by_id(event.data.client_id)
+		if client and client:supports_method("textDocument/completion") then
+			vim.lsp.completion.enable(true, client.id, event.buf, { autotrigger = true })
+		end
+	end,
+})

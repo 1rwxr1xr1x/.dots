@@ -1,0 +1,366 @@
+bat sss.cpp
+cat sss.cpp
+clear
+gcc sss.cpp
+clear
+g++ sss.cpp -o sss
+sss
+ls
+./sss
+rm t t.c t.cpp sss sss.cpp
+ls
+cat .python_history
+rm .python_history
+ls
+clear
+ls *.
+clear
+ls *acs
+clear
+ls 
+ls ~/.config/
+ls ~/.config/emacs
+echo i use doomacs, not emacs so i dont know what emacs' here for
+clear
+ls ~/.emacs.d ~/.config/emacs | head -20\
+stat -c '%y %n' ~/.emacs.d ~/.config/emacs ~/.config/doom
+ls ~/.config/emacs
+rm -rf ~/.config/emacs\
+
+mv ~/.emacs.d ~/.config/emacs\
+mv ~/.doom.d ~/.config/doom\
+
+~/.config/emacs/bin/doom sync\
+
+emacs
+cd music
+path
+where
+clear
+which music
+ckear
+clear
+dir
+cd
+dir
+kew
+ls music
+ls music/level 
+ls music/level 0
+clear
+ls / music/level 0
+ls  /music/level 0
+ls ~/music/level 0
+ls ~/music/level
+ls
+kew
+kew path ~/music
+kew
+kew path /data/data/com.termux/files/home/music
+kew
+rm -f ~/.local/state/kew/Library.dat   
+kew
+cat ~/.config/kew/kewrc   
+r
+cat ~/.config/kew/kewrc   
+clear
+cat ~/.config/kew/kewrc   
+clear
+cat ~/.config/kew/kewrc   
+r
+cat ~/.config/kew/kewrc   
+c
+s
+clewr
+clear
+tree -d
+ckear
+clear
+ckesr
+ckear
+clear
+cd .config
+tree -d
+cd emacd
+emacs
+cd
+emacs
+gcc sss.cpp
+ls
+clear
+ls
+ls bin
+ls junk
+emacs t.cpp
+emacs .config/zsh/.zprofile
+emacs
+cd ..
+cd zs
+cd zsh
+ls
+o kew
+kew
+mv ~/.config/doom ~/.config/doom-backup\
+
+~/.config/emacs/bin/doom purge\
+rm -rf ~/.config/emacs\
+rm -rf ~/.local/share/doom\
+
+mkdir -p ~/.config/emacs\
+touch ~/.config/emacs/init.el\
+
+emacs
+oneshot -K
+disdiscord
+su
+su
+cowsay booo
+path
+nv
+nvim
+du
+clear
+su
+cmatrix
+kew
+su
+su -c "logcat -d -b crash > /sdcard/crashlog.txt"
+su -c "logcat -d > /sdcard/fulllog.txt"
+su -c "ls /data/tombstones/"
+su -c "cat /data/adb/magisk.log > /sdcard/magisklog.txt"\
+su -c "cat /data/adb/magisk_verbose.log > /sdcard/magiskverbose.txt"
+su\
+wm size reset\
+wm density reset\
+wm overscan reset\
+wm fix rotate reset\
+settings delete system display_density_forced\
+settings delete system user_rotation
+clear
+su -c "ls /data/adb/modules | grep -i font"\
+su -c "ls /data/adb/modules/*/system/etc" 2>/dev/null
+su -c "logcat -d -b crash > /sdcard/crashlog.txt"\
+su -c "logcat -d > /sdcard/fulllog.txt"
+setprop persist.sys.disable_rescue true
+su
+cat /data/adb/magisk.log
+font mana
+su -c "ls /system/fonts/"
+lavat
+kew
+pipx install sherlock-project
+pip install sherlock-project
+clear
+pkg update && pkg upgrade -y\
+pkg install tur-repo -y\
+pkg install python git -y\
+pkg update\
+pkg install python-numpy python-pandas -y\
+pip install sherlock-project   
+pip install sherlock-project --no-deps\
+pip install requests torrequest PySocks certifi colorama openpyxl   
+python3 -m sherlock_project 1caesura
+pip install requests-futures tomli   
+python3 -m sherlock_project john
+clear
+python3 -m sherlock_project vyrkol
+python3 -m sherlock_project 1caesura
+git clone https://github.com/tifo234123/email-hunter.git
+cd email-hunter
+pip install rich requests dnspython python-whois
+python mail.py
+ljej
+?mailkeepno
+keekwwpn
+pkg install impala
+emacs yacl.cpp
+man nodejs
+nvim
+nvim calc.cpp
+ls
+mv ~/calc.cpp ~/programs
+ls
+cd programs
+ls
+clang++ calc.cpp -o calc
+ls
+./calc
+nvim calc.cpp
+clang++ calc.cpp -o calc
+./calc
+clang++ calc.cpp -o calc
+nvim calc.cpp
+clang++ calc.cpp -o calc
+./
+./calc
+nvim calc.cpp
+cat /data/adb/magisk.log
+clang++ calc.cpp -o calc
+./calc
+cp ~/programs/calc.cpp ~/storage/shared/
+cp ~/programs/calc ~/storage/shared/
+nvim calc.cpp
+clang++ calc.cpp -o calc
+./
+./calc
+074548
+clear
+cd
+pkg install nodejs git
+apt upgrade -y
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+npm install -g npm@12.1.0
+npm prefix -g\
+command -v pi
+pi
+fastfetch
+pkg install gh
+gh auth login
+gh
+gh repo
+gh repo list
+pkg install aciinema
+pkg install asciinema
+asciinema rec demo.cast
+ls
+mv ~/.pi/agent/demo.cast ~/storage/shared/
+mv ~/storage/shared/demo.cast ~/bin
+cd ../..
+ls
+cd bin
+ls
+agg demo.cast demo.gif
+pkg install agg
+pkg install termux:api
+pkg install termuxapi
+agg demo.cast demo.gif
+clear
+agg demo.cast demo.gif
+mkdir -p ~/.local/share/fonts\
+curl -L -o ~/.local/share/fonts/BigBlueTerminal.ttf \\
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/BigBlueTerminal/BigBlueTerminalPlus/BigBlueTerminalPlusNerdFont-Regular.ttf\
+fc-cache -fv\
+
+pkg install fontconfig-utils
+mkdir -p ~/.local/share/fonts\
+curl -L -o ~/.local/share/fonts/BigBlueTerminal.ttf \\
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/BigBlueTerminal/BigBlueTerminalPlus/BigBlueTerminalPlusNerdFont-Regular.ttf\
+fc-cache -fv\
+
+fc-cache -fv\
+
+mkdir -p $PREFIX/share/fonts/TTF
+url -L -o $PREFIX/share/fonts/TTF/BigBlueTerminal.ttf \\
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/BigBlueTerminal/BigBlueTerminalPlus/BigBlueTerminalPlusNerdFont-Regular.ttf
+curl -L -o $PREFIX/share/fonts/TTF/BigBlueTerminal.ttf \\
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/BigBlueTerminal/BigBlueTerminalPlus/BigBlueTerminalPlusNerdFont-Regular.ttf
+fc-cache -fv\
+
+agg --font-dir $PREFIX/share/fonts/TTF demo.cast demo.gif\
+
+cp demo.gif ~/storage/shared/
+pkg install asciiquarium
+pkg install cacafire
+clear
+ls
+agg --font-dir $PREFIX/share/fonts/TTF demo.cast demo.gif\
+
+head -n 2 $PREFIX/share/fonts/TTF/BigBlueTerminal.ttf\
+
+agg --font-dir $PREFIX/share/fonts/ttf  demo.cast demo.gif\
+
+chmod -R 755 $PREFIX/share/fonts/ttf\
+
+su
+agg --font-dir $PREFIX/share/fonts/ttf  demo.cast demo.gif\
+
+cp demo.gif ~/storage/shared/
+agg --font-family "BigBlueTerminal Nerd Font" demo.cast demo.gif\
+
+agg --font-family "BigBlueTerminal" demo.cast demo.gif\
+
+agg -h
+fc-scan $PREFIX/share/fonts/ttf/*.ttf | grep "family:"\
+
+agg --font-dir $PREFIX/share/fonts/ttf --font-family "BigBlue Terminal 437TT" demo.cast demo.gif\
+
+cp demo.gif ~/storage/shared/
+agg --font-dir $PREFIX/share/fonts/ttf \\
+    --font-family "BigBlue Terminal 437TT" \\
+    --theme "#000000,#e0e0e0" \\
+    demo.cast demo.gif\
+
+agg --font-dir $PREFIX/share/fonts/ttf \\
+    --font-family "BigBlue Terminal 437TT" \\
+    --theme "#e0e0e0" \\
+    demo.cast demo.gif\
+
+agg --font-dir $PREFIX/share/fonts/ttf \\
+    --font-family "BigBlue Terminal 437TT" \\
+    --theme "gruvbox-dark" \\
+    demo.cast demo.gif\
+
+cp demo.gif ~/storage/shared/
+pfetch
+gh autH
+gh auth login
+gh --version
+apt upgrade -y
+pkg clean
+ls
+cd "casper's pishogue"
+gh auth login
+gh repo create .dotfiles --private   
+dots push -u origin main
+ls
+cd .config
+ls
+cd zsh
+ls
+grep -nE 'fastfetch|nvim|mesa|LESSHIST|less_history|pip' ~/.config/zsh/.zshrc
+echo $XDG_CONFIG_HOME\
+grep -rn 'XDG_CONFIG_HOME' ~/.config/zsh/ ~/.zshenv
+ls -la ~/.config | grep zsh\
+readlink -f ~/.config/zsh
+ls -la ~/.config/zsh
+cd ..
+clear
+tree =d
+clear
+tree -d
+clear
+echo $XDG_CACHE_HOME\
+echo $XDG_STATE_HOME\
+grep -n 'XDG_CACHE_HOME\|XDG_STATE_HOME\|LESSHISTFILE\|PIP_CACHE_DIR' ~/.config/zsh/.zprofile ~/.zshenv
+clewr
+clear
+grep -n 'XDG_CACHE_HOME\|XDG_STATE_HOME' ~/.zshenv
+sed -i 's|export XDG_CACHE_HOME="$HOME/.config/zsh"|export XDG_CACHE_HOME="$HOME/.cache"|' ~/.zshenv\
+echo 'export XDG_STATE_HOME="$HOME/.local/state"' >> ~/.zshenv
+mkdir -p ~/.cache\
+mv ~/.config/zsh/pip ~/.config/zsh/mesa_shader_cache ~/.config/zsh/nvim/luac ~/.cache/ 2>/dev/null\
+mv ~/.config/zsh/less_history ~/.cache/less_history
+echo $XDG_CACHE_HOME\
+ls ~/.config/zsh
+echo $XDG_CACHE_HOME\
+
+mv -v ~/.config/zsh/pip ~/.cache/
+rm -rf ~/.config/zsh/pip\
+rm -rf ~/.config/zsh/fastfetch\
+rmdir ~/.config/zsh/nvim 2>/dev/null   # clean up if now empty after luac move
+exec zsh\
+echo $XDG_CACHE_HOME    # should now print ~/.cache\
+ls ~/.config/zsh        # should only show .zcompdump .zprofile .zshrc completions conf.d functions plugins zsh_history
+\
+echo $XDG_CACHE_HOME    # should now print ~/.cache\
+ls ~/.config/zsh        # should only show .zcompdump .zprofile .zshrc completions conf.d functions plugins zsh_history
+echo $SHELL\
+ps -p $$ -o comm=
+ls ~/.config/zsh/nvim
+mkdir -p ~/.cache/nvim\
+mv ~/.config/zsh/nvim/barbar.json ~/.cache/nvim/\
+rmdir ~/.config/zsh/nvim
+echo $XDG_CACHE_HOME\
+ls ~/.config/zsh
+clear
+c

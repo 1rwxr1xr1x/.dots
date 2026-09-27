@@ -1,0 +1,178 @@
+;; speed up startup by temporarily raising garbage collection thresholds
+(setq gc-cons-threshold (* 50 1024 1024))
+(add-hook 'emacs-startup-hook
+          (lambda () (setq gc-cons-threshold (* 2 1024 1024))))
+
+;; initialize the built in package manager
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org") t)
+(package-initialize)
+
+;; bootstrap use package to download missing packages automatically
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+;; clean up the interface layout by disabling standard menus
+(setq inhibit-startup-message t)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(tooltip-mode -1)
+(menu-bar-mode -1)
+(column-number-mode t)
+(global-display-line-numbers-mode t)
+
+;; ui doom theme option set to doom one
+(use-package doom-themes
+  :config (load-theme 'doom-one t))
+
+;; ui modeline snazzy atom inspired status line
+(use-package doom-modeline
+  :init (doom-modeline-mode 1))
+
+;; ui dashboard splash screen on launch
+(use-package dashboard
+  :config (dashboard-setup-startup-hook))
+
+;; ui emoji unicode rich formatting support
+(use-package emojify
+  :hook (after-init . global-emojify-mode))
+
+;; ui hl todo highlight critical programming keywords
+(use-package hl-todo
+  :hook (prog-mode . hl-todo-mode))
+
+;; ui ophints highlight the area an operation acts on
+(use-package volatile-highlights
+  :config (volatile-highlights-mode t))
+
+;; ui vc gutter pretty fringe indicators for diffs
+(use-package git-gutter
+  :config (global-git-gutter-mode t))
+
+;; ui vi tilde fringe tildes to mark beyond end of buffer
+(use-package vi-tilde-fringe
+  :hook (prog-mode . vi-tilde-fringe-mode))
+
+;; ui which key keybinding helper layout popup
+(use-package which-key
+  :init (which-key-mode)
+  :config (setq which-key-idle-delay 0.3))
+
+;; ui workspaces tab emulation and separate workspaces
+(use-package perspective
+  :bind ("C-x k" . persp-kill-buffer*)
+  :init (persp-mode))
+
+;; completion vertico search engine dropdowns for minibuffers
+(use-package vertico
+  :init (vertico-mode))
+
+;; completion corfu inline popups for code completion
+(use-package corfu
+  :init (global-corfu-mode)
+  :custom (corfu-cycle t)
+  (corfu-auto t))
+
+;; completion orderless allows fuzzy searching out of order
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles basic partial-completion)))))
+
+;; editor evil everywhere vim modal editing layer activation
+(use-package evil
+  :init
+  (setq evil-want-integration t)
+  (setq evil-want-keybinding nil)
+  (setq evil-vsplit-window-right t)
+  (setq evil-split-window-below t)
+  :config (evil-mode 1))
+
+(use-package evil-collection
+  :after evil
+  :config (evil-collection-init))
+
+;; space leader key custom definitions using general
+(use-package general
+  :config
+  (general-evil-setup t)
+  (general-create-definer my/leader-keys
+    :keymaps '(normal insert visual emacs)
+    :prefix "SPC"
+    :global-prefix "C-SPC")
+v   (my/leader-keys
+    "f"  '(:ignore t :which-key "files")
+    "ff" '(find-file :which-key "Find file")
+    "fs" '(save-buffer :which-key "Save file")
+    "b"  '(:ignore t :which-key "buffers")
+    "bb" '(switch-to-buffer :which-key "Switch buffer")
+    "bk" '(kill-current-buffer :which-key "Kill buffer")
+    "g"  '(:ignore t :which-key "git")
+    "gs" '(magit-status :which-key "Magit status")
+    "p"  '(:ignore t :which-key "projects")
+    "pt" '(treemacs :which-key "Toggle Treemacs")))
+
+;; editor fold universal code folding minor mode
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+
+;; editor snippets template expansions engine
+(use-package yasnippet
+  :config (yas-global-mode 1))
+
+::;; editor whitespace guess trim butler for cleaning trailing lines
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; emacs electric smarter indentation and automatic bracket pairs
+(electric-pair-mode 1)
+(electric-indent-mode 1)
+
+;; emacs undo persistent smarter undo handling
+(use-package undo-fu
+  :config
+  (define-key evil-normal-state-map "u" 'undo-fu-only-undo)
+  (define-key evil-normal-state-map "\C-r" 'undo-fu-only-redo))
+
+;; emacs tramp remote files via ssh connections
+(setq tramp-default-method "ssh")
+
+;; tools magit git porcelain for emacs
+(use-package magit)
+
+;; tools tree sitter syntax and structural parsing
+(use-package tree-sitter
+  :config (global-tree-sitter-mode 1))
+(use-package tree-sitter-langs :after tree-sitter)
+
+;; tools lsp eglot native programming server integration hooks
+(require 'eglot)
+(add-hook 'c-mode-hook #'eglot-ensure)
+(add-hook 'c++-mode-hook #'eglot-ensure)
+(add-hook 'csharp-mode-hook #'eglot-ensure)
+
+;; checkers syntax flymake compilation error tracking
+(add-hook 'prog-mode-hook #'flymake-mode)
+
+;; treemacs sidebar file layout drawer project tracker
+(use-package treemacs
+  :defer t)
+(use-package treemacs-evil :after treemacs)
+
+;; lang markdown writing documentation format
+(use-package markdown-mode
+  :mode ("\\.md\\'" . gfm-mode))
+
+;; lang org organize plain life in plain text
+(use-package org
+  :config (setq org-log-done 'time))
+
+;; lang csharp unity net development environment
+(use-package csharp-mode
+  :mode "\\.cs\\'")
+
+;; os macos modifier keys translation if system is running darwin
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'alt))
