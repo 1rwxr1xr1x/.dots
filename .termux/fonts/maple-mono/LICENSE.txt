@@ -1,0 +1,10 @@
+Maple Mono (v7.9)
+
+SIL Open Font License 1.1
+
+Copyright 2022 The Maple Mono Project Authors (https://github.com/subframe7536/maple-font). This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Full license text: https://github.com/subframe7536/maple-font/blob/v7.9/OFL.txt
+Upstream project:  https://github.com/subframe7536/maple-font
+
+Installed by Termux Launcher. Deleting this directory removes the family.

@@ -1,0 +1,10 @@
+MesloLGS NF (master)
+
+Apache License 2.0
+
+MesloLGS NF is Meslo LG S patched with Nerd Fonts glyphs. Meslo LG is Copyright 2009-2013 Andre Berg, licensed Apache 2.0; Bitstream Vera is Copyright Bitstream, Inc.; Nerd Fonts glyphs are MIT licensed.
+
+Full license text: https://github.com/romkatv/powerlevel10k-media/blob/master/MesloLGS%20NF%20License.txt
+Upstream project:  https://github.com/romkatv/powerlevel10k
+
+Installed by Termux Launcher. Deleting this directory removes the family.

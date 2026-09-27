@@ -1,0 +1,10 @@
+Fira Code (6.2)
+
+SIL Open Font License 1.1
+
+Copyright (c) 2014, The Fira Code Project Authors (https://github.com/tonsky/FiraCode). This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Full license text: https://github.com/tonsky/FiraCode/blob/6.2/LICENSE
+Upstream project:  https://github.com/tonsky/FiraCode
+
+Installed by Termux Launcher. Deleting this directory removes the family.

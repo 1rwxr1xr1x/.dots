@@ -1,0 +1,10 @@
+Intel One Mono (V1.4.0)
+
+SIL Open Font License 1.1
+
+Copyright (c) 2023 Intel Corporation (https://github.com/intel/intel-one-mono). This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Full license text: https://github.com/intel/intel-one-mono/blob/V1.4.0/OFL.txt
+Upstream project:  https://github.com/intel/intel-one-mono
+
+Installed by Termux Launcher. Deleting this directory removes the family.

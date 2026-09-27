@@ -1,0 +1,10 @@
+JetBrains Mono (v2.304)
+
+SIL Open Font License 1.1
+
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono). This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Full license text: https://github.com/JetBrains/JetBrainsMono/blob/v2.304/OFL.txt
+Upstream project:  https://github.com/JetBrains/JetBrainsMono
+
+Installed by Termux Launcher. Deleting this directory removes the family.

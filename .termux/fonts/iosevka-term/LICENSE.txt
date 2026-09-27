@@ -1,0 +1,10 @@
+Iosevka Term (v3.5.0)
+
+SIL Open Font License 1.1
+
+Iosevka is Copyright 2015-2024 Renzhi Li (aka. Belleve Invis), licensed under the SIL Open Font License, Version 1.1. Nerd Fonts glyphs are MIT licensed, see https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE.
+
+Full license text: https://github.com/be5invis/Iosevka/blob/v34.8.0/LICENSE.md
+Upstream project:  https://github.com/be5invis/Iosevka
+
+Installed by Termux Launcher. Deleting this directory removes the family.

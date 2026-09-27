@@ -1,0 +1,10 @@
+Cascadia Code (v2111.01)
+
+SIL Open Font License 1.1
+
+Copyright (c) 2019 - Present, Microsoft Corporation (https://github.com/microsoft/cascadia-code). This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Full license text: https://github.com/microsoft/cascadia-code/blob/v2111.01/LICENSE
+Upstream project:  https://github.com/microsoft/cascadia-code
+
+Installed by Termux Launcher. Deleting this directory removes the family.
